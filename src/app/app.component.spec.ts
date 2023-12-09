@@ -3,27 +3,27 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
- beforeEach(() => TestBed.configureTestingModule({
-   imports: [RouterTestingModule],
-   declarations: [AppComponent]
- }));
+  beforeEach(() => TestBed.configureTestingModule({
+    imports: [RouterTestingModule],
+    declarations: [AppComponent]
+  }));
 
- it('should create the app', () => {
-   const fixture = TestBed.createComponent(AppComponent);
-   const app = fixture.componentInstance;
-   expect(app).toBeTruthy();
- });
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
 
- it(`should have as title 'ci-cd-introduction'`, () => {
-   const fixture = TestBed.createComponent(AppComponent);
-   const app = fixture.componentInstance;
-   expect(app.title).toEqual('ci-cd-introduction');
- });
+  it(`should have as title 'MBOZOO MENGO ARTHUR WILLIAM'`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('MBOZOO MENGO ARTHUR WILLIAM');
+  });
 
- it('should render title', () => {
-  const fixture = TestBed.createComponent(AppComponent);
-  fixture.detectChanges();
-  const compiled = fixture.nativeElement as HTMLElement;
-  expect(compiled.querySelector('h1')?.textContent).toContain('ci-cd-introduction');
- });
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('.content span')?.textContent).toContain('MBOZOO MENGO ARTHUR WILLIAM');
+  });
 });
