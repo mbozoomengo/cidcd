@@ -24,6 +24,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('MBOZOO MENGO ARTHUR WILLIAM');
+    expect(compiled.querySelector('h1')?.textContent).toContain('MBOZOO MENGO ARTHUR WILLIAM');
   });
 });
